@@ -1,9 +1,16 @@
 {
-    "name": "codeigniter4/appstarter",
+    "name": "kenjis/ci4-app-template",
     "type": "project",
-    "description": "CodeIgniter4 starter app",
-    "homepage": "https://codeigniter.com",
+    "description": "CodeIgniter4 application template",
+    "keywords": ["codeigniter", "codeigniter4", "project template"],
+    "homepage": "https://github.com/kenjis/ci4-app-template",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Kenji Suzuki",
+            "homepage": "https://github.com/kenjis"
+        }
+    ],
     "require": {
         "php": ">=7.3",
         "codeigniter4/translations": "dev-develop",
