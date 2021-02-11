@@ -20,7 +20,15 @@ This repository includes:
 
 ## How to Install
 
+### Composer
+
+```sh-session
+$ composer create-project kenjis/ci4-app-template your-project
 ```
+
+### Git
+
+```sh-session
 $ git clone https://github.com/kenjis/ci4-app-template.git your-project
 $ cd your-project/
 $ composer install
