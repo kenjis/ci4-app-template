@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35842265ffa7786dafbce81c775b9f27",
+    "content-hash": "c4c9ae89baed85c8c344da0a52140704",
     "packages": [
         {
             "name": "codeigniter4/codeigniter4",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "7dd440afd37da989c217638b7d67402c5ae910f1"
+                "reference": "e7eff8ea2d4561ecc5ffd65d465e4da70e113cce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/7dd440afd37da989c217638b7d67402c5ae910f1",
-                "reference": "7dd440afd37da989c217638b7d67402c5ae910f1",
+                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/e7eff8ea2d4561ecc5ffd65d465e4da70e113cce",
+                "reference": "e7eff8ea2d4561ecc5ffd65d465e4da70e113cce",
                 "shasum": ""
             },
             "require": {
@@ -34,10 +34,11 @@
                 "codeigniter4/codeigniter4-standard": "^1.0",
                 "fakerphp/faker": "^1.9",
                 "mikey179/vfsstream": "^1.6",
-                "phpstan/phpstan": "0.12.69",
+                "nette/utils": "^3.2",
+                "phpstan/phpstan": "0.12.74",
                 "phpunit/phpunit": "^9.1",
                 "predis/predis": "^1.1",
-                "rector/rector": "^0.9",
+                "rector/rector-prefixed": "^0.9",
                 "squizlabs/php_codesniffer": "^3.3"
             },
             "suggest": {
@@ -82,7 +83,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
             },
-            "time": "2021-02-08T17:23:22+00:00"
+            "time": "2021-02-10T17:51:14+00:00"
         },
         {
             "name": "codeigniter4/translations",
@@ -5622,16 +5623,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "4.4.1",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "9fd7a7d885b3a216cff8dec9d8c21a132f275224"
+                "reference": "a45b5e2ae01d43175ff02684f592c83cfbd48533"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/9fd7a7d885b3a216cff8dec9d8c21a132f275224",
-                "reference": "9fd7a7d885b3a216cff8dec9d8c21a132f275224",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/a45b5e2ae01d43175ff02684f592c83cfbd48533",
+                "reference": "a45b5e2ae01d43175ff02684f592c83cfbd48533",
                 "shasum": ""
             },
             "require": {
@@ -5720,9 +5721,9 @@
             ],
             "support": {
                 "issues": "https://github.com/vimeo/psalm/issues",
-                "source": "https://github.com/vimeo/psalm/tree/4.4.1"
+                "source": "https://github.com/vimeo/psalm/tree/4.5.0"
             },
-            "time": "2021-01-14T21:44:29+00:00"
+            "time": "2021-02-10T17:20:36+00:00"
         },
         {
             "name": "webmozart/assert",
