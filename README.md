@@ -60,6 +60,7 @@ composer run-script --list // List all commands
 ## Related Projects for CodeIgniter 4.x
 
 - [CodeIgniter 3 to 4 Upgrade Helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)
+- [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
 - [CodeIgniter3-like Captcha](https://github.com/kenjis/ci3-like-captcha)
 - [PHPUnit Helper](https://github.com/kenjis/phpunit-helper)
 - [docker-codeigniter-apache](https://github.com/kenjis/docker-codeigniter-apache)
