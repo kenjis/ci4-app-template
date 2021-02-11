@@ -2,15 +2,15 @@
 
 This repository includes:
 
-- CodeIgniter 4.1.2-dev
+- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.2-dev
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- PHPUnit 9.5.2
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.2
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
 
 ## Requirements
 
-- PHP 7.3 or later
+- [PHP 7.3](https://www.php.net/releases/7_3_0.php) or later
   - [intl](http://php.net/manual/en/intl.requirements.php)
   - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
   - json (enabled by default - don't turn it off)
@@ -37,7 +37,7 @@ $ git checkout -b main
 
 ## How to Update
 
-```
+```sh-session
 $ composer update
 ```
 
@@ -57,16 +57,9 @@ composer sa                // Run static analysis
 composer run-script --list // List all commands
 ```
 
-## What is CodeIgniter?
+## Related Projects for CodeIgniter 4.x
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible, and secure. 
-More information can be found at the [official site](http://codeigniter.com).
-
-This repository holds a composer-installable app starter.
-It has been built from the 
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
-
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/). 
+- [CodeIgniter 3 to 4 Upgrade Helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)
+- [CodeIgniter3-like Captcha](https://github.com/kenjis/ci3-like-captcha)
+- [PHPUnit Helper](https://github.com/kenjis/phpunit-helper)
+- [docker-codeigniter-apache](https://github.com/kenjis/docker-codeigniter-apache)
