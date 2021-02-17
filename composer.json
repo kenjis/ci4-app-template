@@ -39,6 +39,9 @@
             "@sa",
             "@test"
         ],
+        "coverage": [
+            "php -dzend_extension=xdebug.so ./vendor/bin/phpunit --coverage-text --coverage-html=build/coverage"
+        ],
         "cs-fix": "phpcbf",
         "cs": "phpcs",
         "sa": [
