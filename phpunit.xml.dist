@@ -5,9 +5,9 @@
       <directory suffix=".php">./app</directory>
     </include>
     <exclude>
+      <directory suffix=".php">./app/Config</directory>
+      <directory suffix=".php">./app/Database</directory>
       <directory suffix=".php">./app/Views</directory>
-      <file>./app/Config/App.php</file>
-      <file>./app/Config/Routes.php</file>
     </exclude>
   </coverage>
   <testsuites>
