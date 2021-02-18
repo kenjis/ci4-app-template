@@ -59,6 +59,13 @@
             "@cs",
             "@sa",
             "@test"
+        ],
+        "build": [
+            "@clean",
+            "@cs",
+            "@sa",
+            "@pcov",
+            "@metrics"
         ]
     },
     "scripts-descriptions": {
