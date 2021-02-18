@@ -41,9 +41,8 @@
             "@sa",
             "@test"
         ],
-        "coverage": [
-            "php -dzend_extension=xdebug.so ./vendor/bin/phpunit --coverage-text --coverage-html=build/coverage"
-        ],
+        "coverage": "php -dzend_extension=xdebug.so -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text --coverage-html=build/coverage --log-junit=build/coverage/junit.xml",
+        "pcov": "php -dextension=pcov.so -d pcov.enabled=1 ./vendor/bin/phpunit --coverage-text --coverage-html=build/coverage  --coverage-clover=coverage.xml --log-junit=build/coverage/junit.xml",
         "cs-fix": "phpcbf",
         "cs": "phpcs",
         "sa": [
@@ -51,7 +50,16 @@
             "psalm --show-info=true",
             "@md"
         ],
-        "md": "phpmd app text ./phpmd.xml --exclude */app/Config,*/app/Views"
+        "md": "phpmd app text ./phpmd.xml --exclude */app/Config,*/app/Views",
+        "metrics": "./vendor/bin/phpmetrics --report-html=build/metrics --exclude='Config,Database,Language,ThirdParty,Views' --junit=build/coverage/junit.xml app",
+        "loc": [
+            "./vendor/bin/phploc --exclude=Config --exclude=Language --exclude=ThirdParty --exclude=Views/errors app/",
+            "./vendor/bin/phploc --count-tests --exclude=_supprot --exclude=bootstrap.php tests/"
+        ],
+        "clean": [
+            "./vendor/bin/phpstan clear-result-cache",
+            "./vendor/bin/psalm --clear-cache"
+        ]
     },
     "scripts-descriptions": {
         "test": "Run PHPUnit",
