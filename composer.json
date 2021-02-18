@@ -21,7 +21,8 @@
         "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "1.6.*",
         "phpunit/phpunit": "^9.0",
-        "bear/qatools": "^1.9"
+        "bear/qatools": "^1.9",
+        "bamarni/composer-bin-plugin": "^1.4"
     },
     "autoload-dev": {
         "psr-4": {
