@@ -1,5 +1,6 @@
 {
     "require": {
-        "phploc/phploc": "^7.0"
+        "phploc/phploc": "^7.0",
+        "bear/qatools": "^1.9"
     }
 }
