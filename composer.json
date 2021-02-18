@@ -70,10 +70,16 @@
     },
     "scripts-descriptions": {
         "test": "Run PHPUnit",
-        "tests": "Run tests and quality checks",
+        "coverage": "Generate test coverage report",
+        "pcov": "Generate test coverage report (pcov)",
         "cs": "Check the coding style",
         "cs-fix": "Fix the coding style",
-        "sa": "Run static analysis"
+        "md": "Run PHPMD",
+        "metrics": "Run PhpMetrics",
+        "clean": "Delete tmp files",
+        "sa": "Run static analysis",
+        "tests": "Run tests and quality checks",
+        "build": "Build project"
     },
     "support": {
         "forum": "http://forum.codeigniter.com/",
