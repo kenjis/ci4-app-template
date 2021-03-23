@@ -43,7 +43,7 @@
         "md": "phpmd app text ./phpmd.xml --exclude */app/Config,*/app/Views",
         "metrics": "./vendor/bin/phpmetrics --report-html=build/metrics --exclude='Config,Database,Language,ThirdParty,Views' --junit=build/coverage/junit.xml app",
         "loc": [
-            "./vendor/bin/phploc --exclude=Config --exclude=Language --exclude=ThirdParty --exclude=Views/errors app/",
+            "./vendor/bin/phploc --exclude=app/Config --exclude=app/Language --exclude=app/ThirdParty --exclude=app/Views/errors app/",
             "./vendor/bin/phploc --count-tests --exclude=_supprot --exclude=bootstrap.php tests/"
         ],
         "clean": [
