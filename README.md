@@ -46,6 +46,7 @@ $ composer update
 - CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L33).
 - Auto-Discovery of services is disabled. [app/Config/Modules.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Modules.php#L51).
 - `Config\Services` extends `CodeIgniter\Config\Services`. [app/Config/Services.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Services.php#L20).
+- Using `develop` version CI4. [app/Config/Paths.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Paths.php#L28)
 
 ## Available Commands
 
