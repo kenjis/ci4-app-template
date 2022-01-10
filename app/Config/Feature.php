@@ -23,5 +23,5 @@ class Feature extends BaseConfig
      *
      * @var bool
      */
-    public $multipleFilters = false;
+    public $multipleFilters = true;
 }
