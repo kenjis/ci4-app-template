@@ -34,7 +34,7 @@ class Filters extends BaseConfig
     public $globals = [
         'before' => [
             // 'honeypot',
-            'csrf',
+            // 'csrf',
             'invalidchars',
         ],
         'after' => [
@@ -53,7 +53,12 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $methods = [];
+    public $methods = [
+        'post' => ['csrf'],
+        'put' => ['csrf'],
+        'patch' => ['csrf'],
+        'delete' => ['csrf'],
+    ];
 
     /**
      * List of filter aliases that should run on any
