@@ -25,7 +25,9 @@ final class HealthTest extends CIUnitTestCase
 
         // Check the baseURL in .env
         if (is_file(HOMEPATH . '.env')) {
-            $env = preg_grep('/^app\.baseURL = ./', file(HOMEPATH . '.env')) !== false;
+            $lines = file(HOMEPATH . '.env');
+            assert(is_array($lines));
+            $env = preg_grep('/^app\.baseURL = ./', $lines) !== false;
         }
 
         if ($env) {
