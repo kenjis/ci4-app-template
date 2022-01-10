@@ -46,7 +46,6 @@ $ composer update
 - CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L33).
 - Auto-Discovery of services is disabled. [app/Config/Modules.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Modules.php#L51).
 - `Config\Services` extends `CodeIgniter\Config\Services`. [app/Config/Services.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Services.php#L20).
-- CSP is enabled. [app/Config/App.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L463).
 - `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21).
 - Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18).
 - CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29).

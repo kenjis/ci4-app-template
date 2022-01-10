@@ -31,8 +31,7 @@
 # app.sessionTimeToUpdate = 300
 # app.sessionRegenerateDestroy = false
 
-# changed by ci4-app-template
-# app.CSPEnabled = true
+# app.CSPEnabled = false
 
 #--------------------------------------------------------------------
 # DATABASE
