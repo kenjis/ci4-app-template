@@ -2,9 +2,9 @@
 
 This repository includes:
 
-- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.5-dev
+- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.8-dev
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.10
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.11
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.1.0
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
 
@@ -46,6 +46,11 @@ $ composer update
 - CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L33).
 - Auto-Discovery of services is disabled. [app/Config/Modules.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Modules.php#L51).
 - `Config\Services` extends `CodeIgniter\Config\Services`. [app/Config/Services.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Services.php#L20).
+- CSP is enabled.
+- `Config\CURLRequest::$shareOptions` is disabled.
+- Using Session based CSRF protection
+- CSRF protection `$tokenRandomize` is enabled.
+- `Config\Feature::$multipleFilters` is enabled.
 - Using `develop` version CI4. [app/Config/Paths.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Paths.php#L28)
 
 ## Available Commands

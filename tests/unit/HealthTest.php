@@ -2,44 +2,53 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit;
-
 use CodeIgniter\Test\CIUnitTestCase;
+use Config\App;
+use Config\Services;
 use Tests\Support\Libraries\ConfigReader;
 
-use function defined;
-use function file;
-use function is_file;
-use function preg_grep;
-
-class HealthTest extends CIUnitTestCase
+/**
+ * @internal
+ */
+final class HealthTest extends CIUnitTestCase
 {
-    public function setUp(): void
-    {
-        parent::setUp();
-    }
-
     public function testIsDefinedAppPath(): void
     {
-        $test = defined('APPPATH');
-
-        $this->assertTrue($test);
+        $this->assertTrue(defined('APPPATH'));
     }
 
     public function testBaseUrlHasBeenSet(): void
     {
-        $env = $config = false;
+        $validation = Services::validation();
 
-        // First check in .env
+        $env = false;
+
+        // Check the baseURL in .env
         if (is_file(HOMEPATH . '.env')) {
-            // @phpstan-ignore-next-line
-            $env = (bool) preg_grep("/^app\.baseURL = './", file(HOMEPATH . '.env'));
+            $lines = file(HOMEPATH . '.env');
+            assert(is_array($lines));
+            $env = preg_grep('/^app\.baseURL = ./', $lines) !== false;
         }
 
-        // Then check the actual config file
-        $reader = new ConfigReader();
-        $config = ! empty($reader->baseUrl);
+        if ($env) {
+            // BaseURL in .env is a valid URL?
+            // phpunit.xml.dist sets app.baseURL in $_SERVER
+            // So if you set app.baseURL in .env, it takes precedence
+            $config = new App();
+            $this->assertTrue(
+                $validation->check($config->baseURL, 'valid_url'),
+                'baseURL "' . $config->baseURL . '" in .env is not valid URL'
+            );
+        }
 
-        $this->assertTrue($env || $config);
+        // Get the baseURL in app/Config/App.php
+        // You can't use Config\App, because phpunit.xml.dist sets app.baseURL
+        $reader = new ConfigReader();
+
+        // BaseURL in app/Config/App.php is a valid URL?
+        $this->assertTrue(
+            $validation->check($reader->baseURL, 'valid_url'),
+            'baseURL "' . $reader->baseURL . '" in app/Config/App.php is not valid URL'
+        );
     }
 }
