@@ -2,23 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Tests\Session;
+use CodeIgniter\Test\CIUnitTestCase;
+use Config\Services;
 
-use Tests\Support\SessionTestCase;
-
-class ExampleSessionTest extends SessionTestCase
+/**
+ * @internal
+ */
+final class ExampleSessionTest extends CIUnitTestCase
 {
-    public function setUp(): void
-    {
-        parent::setUp();
-    }
-
     public function testSessionSimple(): void
     {
-        $this->session->set('logged_in', '123');
+        $session = Services::session();
 
-        $value = $this->session->get('logged_in');
-
-        $this->assertEquals('123', $value);
+        $session->set('logged_in', 123);
+        $this->assertSame(123, $session->get('logged_in'));
     }
 }

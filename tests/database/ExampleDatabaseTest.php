@@ -2,23 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Tests\Database;
-
-use CodeIgniter\Database\ResultInterface;
-use stdClass;
-use Tests\Support\DatabaseTestCase;
+use CodeIgniter\Test\CIUnitTestCase;
+use CodeIgniter\Test\DatabaseTestTrait;
+use Tests\Support\Database\Seeds\ExampleSeeder;
 use Tests\Support\Models\ExampleModel;
 
-use function assert;
-
-class ExampleDatabaseTest extends DatabaseTestCase
+/**
+ * @internal
+ */
+final class ExampleDatabaseTest extends CIUnitTestCase
 {
-    public function setUp(): void
-    {
-        parent::setUp();
+    use DatabaseTestTrait;
 
-        // Extra code to run before each test
-    }
+    protected $seed = ExampleSeeder::class;
 
     public function testModelFindAll(): void
     {
@@ -38,18 +34,14 @@ class ExampleDatabaseTest extends DatabaseTestCase
         $this->setPrivateProperty($model, 'tempUseSoftDeletes', true);
 
         $object = $model->first();
-        assert($object instanceof stdClass);
         $model->delete($object->id);
 
         // The model should no longer find it
-        $objectDeleted = $model->find($object->id);
-        $this->assertNull($objectDeleted);
+        $this->assertNull($model->find($object->id));
 
         // ... but it should still be in the database
-        $result = $model->builder()->where('id', $object->id)->get();
-        assert($result instanceof ResultInterface);
-        $resultArray = $result->getResult();
+        $result = $model->builder()->where('id', $object->id)->get()->getResult();
 
-        $this->assertCount(1, $resultArray);
+        $this->assertCount(1, $result);
     }
 }
