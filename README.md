@@ -43,6 +43,7 @@ $ composer update
 
 ## Changes from the CI4 Default Configuration
 
+- Auto Routing is disabled. [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L24).
 - CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L57-L60).
 - InvalidChars filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L38).
 - SecureHeaders filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L43).
