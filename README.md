@@ -2,11 +2,11 @@
 
 This repository includes:
 
-- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.8-dev
+- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.8
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.11
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.13
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.1.0
-- [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
+- [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.10.0
 
 ## Requirements
 
@@ -81,6 +81,7 @@ composer run-script --list // List all commands
 
 ## Related Projects for CodeIgniter 4.x
 
+- [CodeIgniter4 Attribute Routes](https://github.com/kenjis/ci4-attribute-routes)
 - [CodeIgniter 3 to 4 Upgrade Helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)
 - [CodeIgniter Simple and Secure Twig](https://github.com/kenjis/codeigniter-ss-twig)
 - [CodeIgniter3-like Captcha](https://github.com/kenjis/ci3-like-captcha)
