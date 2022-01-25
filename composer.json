@@ -14,7 +14,7 @@
     "require": {
         "php": ">=7.3",
         "codeigniter4/translations": "dev-develop",
-        "codeigniter4/codeigniter4": "dev-develop",
+        "codeigniter4/codeigniter4": "^4.1.8",
         "liaison/revision": "^1.0"
     },
     "require-dev": {
