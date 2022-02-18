@@ -1,5 +1,7 @@
 # CodeIgniter 4 Application Template
 
+This template changes the default configuration of CI4 more secure.
+
 This repository includes:
 
 - [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.8
@@ -15,7 +17,7 @@ This repository includes:
   - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
   - json (enabled by default - don't turn it off)
   - [mbstring](http://php.net/manual/en/mbstring.installation.php)
-  - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+  - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
   - xml (enabled by default - don't turn it off)
 
 ## How to Install
@@ -40,6 +42,10 @@ $ git checkout -b main
 ```sh-session
 $ composer update
 ```
+
+## How to Use
+
+- You must set CSRF token field in your form manually.
 
 ## Changes from the CI4 Default Configuration
 
