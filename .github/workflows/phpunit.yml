@@ -4,11 +4,12 @@ on:
   pull_request:
     branches:
       - develop
-      - 'app/**'
-      - 'tests/**'
-      - composer.*
+    paths:
+      - 'app/**.php'
+      - 'tests/**.php'
+      - 'composer.*'
       - phpunit.xml.dist
-      - '.github/workflows/**'
+      - .github/workflows/phpunit.yml
 
 jobs:
   main:

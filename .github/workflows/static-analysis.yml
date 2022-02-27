@@ -4,14 +4,14 @@ on:
   pull_request:
     branches:
       - develop
-      - 'app/**'
-      - 'tests/**'
-      - composer.*
-      - phpcs.xml
+    paths:
+      - 'app/**.php'
+      - 'tests/**.php'
+      - 'composer.*'
       - phpmd.xml
       - phpstan.neon
       - psalm.xml
-      - '.github/workflows/**'
+      - .github/workflows/static-analysis.yml
 
 jobs:
   static-analysis-phpstan:
