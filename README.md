@@ -4,9 +4,9 @@ This template changes the default configuration of CI4 more secure.
 
 This repository includes:
 
-- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.8
+- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.9
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.13
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.16
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.1.0
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.10.0
 
