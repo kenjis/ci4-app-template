@@ -93,5 +93,10 @@
             "type": "vcs",
             "url": "https://github.com/codeigniter4/codeigniter4"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        }
+    }
 }
