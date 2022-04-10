@@ -60,6 +60,8 @@ $ composer update
 - `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21).
 - Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18).
 - CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29).
+- CSP is enabled. [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464).
+- CSP `$autoNonce` is disabled. [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187).
 
 ### Filters
 

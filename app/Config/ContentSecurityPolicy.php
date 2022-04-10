@@ -184,5 +184,5 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var bool
      */
-    public $autoNonce = true;
+    public $autoNonce = false;
 }
