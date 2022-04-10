@@ -45,7 +45,14 @@ $ composer update
 
 ## How to Use
 
-- You must set CSRF token field in your form manually.
+### CSRF
+
+- You must set CSRF token field in your form manually. See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#html-forms
+
+### CSP
+
+- You must set CSP when you need. See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#content-security-policy
+- You need to use `csp_script_nonce()` and `csp_style_nonce()` for inline contents. See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#inline-content
 
 ## Changes from the CI4 Default Configuration
 
