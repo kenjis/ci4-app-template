@@ -4,15 +4,15 @@ This template changes the default configuration of CI4 more secure.
 
 This repository includes:
 
-- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.1.9
+- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.2.0-dev
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.16
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.5.20
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.1.0
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.10.0
 
 ## Requirements
 
-- [PHP 7.3](https://www.php.net/releases/7_3_0.php) or later
+- [PHP 7.4](https://www.php.net/releases/7_4_0.php) or later
   - [intl](http://php.net/manual/en/intl.requirements.php)
   - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
   - json (enabled by default - don't turn it off)
@@ -45,7 +45,14 @@ $ composer update
 
 ## How to Use
 
-- You must set CSRF token field in your form manually.
+### CSRF
+
+- You must set CSRF token field in your form manually. See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#html-forms
+
+### CSP
+
+- You must set CSP when you need. See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#content-security-policy
+- You need to use `csp_script_nonce()` and `csp_style_nonce()` for inline contents. See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#inline-content
 
 ## Changes from the CI4 Default Configuration
 
@@ -56,10 +63,12 @@ $ composer update
 
 ### Configs
 
-- Auto Routing is disabled. [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L24).
+- Auto Routing is disabled. [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L24). (Since v4.2.0, CI4 is also disabled by default.)
 - `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21).
 - Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18).
 - CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29).
+- CSP is enabled. [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464).
+- CSP `$autoNonce` is disabled. [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187).
 
 ### Filters
 

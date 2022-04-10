@@ -12,9 +12,9 @@
         }
     ],
     "require": {
-        "php": ">=7.3",
+        "php": "^7.4 || ^8.0",
         "codeigniter4/translations": "dev-develop",
-        "codeigniter4/codeigniter4": "^4.1.8",
+        "codeigniter4/codeigniter4": "dev-develop",
         "liaison/revision": "^1.0"
     },
     "require-dev": {
