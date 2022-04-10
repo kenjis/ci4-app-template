@@ -31,7 +31,7 @@
 # app.sessionTimeToUpdate = 300
 # app.sessionRegenerateDestroy = false
 
-# app.CSPEnabled = false
+# app.CSPEnabled = true
 
 #--------------------------------------------------------------------
 # DATABASE
@@ -75,7 +75,7 @@
 # contentsecuritypolicy.upgradeInsecureRequests = false
 # contentsecuritypolicy.styleNonceTag = '{csp-style-nonce}'
 # contentsecuritypolicy.scriptNonceTag = '{csp-script-nonce}'
-# contentsecuritypolicy.autoNonce = true
+# contentsecuritypolicy.autoNonce = false
 
 #--------------------------------------------------------------------
 # COOKIE
