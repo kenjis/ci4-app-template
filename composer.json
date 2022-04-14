@@ -19,9 +19,17 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
-        "mikey179/vfsstream": "1.6.*",
-        "phpunit/phpunit": "^9.0",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.1",
         "bamarni/composer-bin-plugin": "^1.4"
+    },
+    "suggest": {
+        "ext-fileinfo": "Improves mime type detection for files"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
