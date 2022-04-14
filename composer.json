@@ -21,7 +21,8 @@
         "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "^1.6",
         "phpunit/phpunit": "^9.1",
-        "bamarni/composer-bin-plugin": "^1.4"
+        "bamarni/composer-bin-plugin": "^1.4",
+        "codeigniter4/devkit": "~0.1.0"
     },
     "suggest": {
         "ext-fileinfo": "Improves mime type detection for files"
@@ -104,7 +105,8 @@
     ],
     "config": {
         "allow-plugins": {
-            "bamarni/composer-bin-plugin": true
+            "bamarni/composer-bin-plugin": true,
+            "phpstan/extension-installer": true
         }
     }
 }
