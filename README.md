@@ -45,6 +45,10 @@ $ composer update
 
 ## How to Use
 
+### Services
+
+- All Services must be manually added to `app/Config/Services.php`, even if third-party CI4 packages have their own Services.
+
 ### CSRF
 
 - You must set CSRF token field in your form manually. See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#html-forms
@@ -63,22 +67,23 @@ $ composer update
 
 ### Configs
 
-- Auto Routing is disabled. [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L24). (Since v4.2.0, CI4 is also disabled by default.)
-- `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21).
-- Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18).
-- CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29).
-- CSP is enabled. [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464).
-- CSP `$autoNonce` is disabled. [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187).
+- Auto Routing is disabled. [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L24). (Since v4.2.0, CI4 also disable this setting by default.)
+- `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
+- Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#csrf-protection-methods
+- CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#token-randomization
+- CSP is enabled. [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464). See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#turning-csp-on
+- CSP `$autoNonce` is disabled. [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187). See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#inline-content
+- Strict Validation Rules are used. [app/Config/Validation.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Validation.php#L24-L27). See https://codeigniter4.github.io/CodeIgniter4/libraries/validation.html#traditional-and-strict-rules
 
 ### Filters
 
-- CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L57-L60).
-- InvalidChars filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L38).
-- SecureHeaders filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L43).
+- CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L57-L60). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#enable-csrf-protection
+- InvalidChars filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L38). See https://codeigniter4.github.io/CodeIgniter4/incoming/filters.html#invalidchars
+- SecureHeaders filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L43). See https://codeigniter4.github.io/CodeIgniter4/incoming/filters.html#secureheaders
 
 ### Features
 
-- `Config\Feature::$multipleFilters` is enabled. [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L26).
+- `Config\Feature::$multipleFilters` is enabled. [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L26). See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#applying-filters
 
 ### Others
 
