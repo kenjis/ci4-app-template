@@ -31,6 +31,7 @@
 # app.sessionTimeToUpdate = 300
 # app.sessionRegenerateDestroy = false
 
+# changed by ci4-app-template
 # app.CSPEnabled = true
 
 #--------------------------------------------------------------------
@@ -75,6 +76,7 @@
 # contentsecuritypolicy.upgradeInsecureRequests = false
 # contentsecuritypolicy.styleNonceTag = '{csp-style-nonce}'
 # contentsecuritypolicy.scriptNonceTag = '{csp-script-nonce}'
+# changed by ci4-app-template
 # contentsecuritypolicy.autoNonce = false
 
 #--------------------------------------------------------------------
