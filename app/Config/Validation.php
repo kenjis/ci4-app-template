@@ -3,10 +3,6 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
-use CodeIgniter\Validation\CreditCardRules;
-use CodeIgniter\Validation\FileRules;
-use CodeIgniter\Validation\FormatRules;
-use CodeIgniter\Validation\Rules;
 
 class Validation extends BaseConfig
 {
@@ -21,10 +17,10 @@ class Validation extends BaseConfig
      * @var string[]
      */
     public $ruleSets = [
-        Rules::class,
-        FormatRules::class,
-        FileRules::class,
-        CreditCardRules::class,
+        \CodeIgniter\Validation\StrictRules\CreditCardRules::class,
+        \CodeIgniter\Validation\StrictRules\FileRules::class,
+        \CodeIgniter\Validation\StrictRules\FormatRules::class,
+        \CodeIgniter\Validation\StrictRules\Rules::class,
     ];
 
     /**
