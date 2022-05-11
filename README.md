@@ -40,8 +40,16 @@ $ git checkout -b main
 
 ## How to Update
 
+Update Composer packages:
+
 ```sh-session
 $ composer update
+```
+
+Update your CodeIgniter4 project files:
+
+```sh-session
+$ php spark revision:update
 ```
 
 ## How to Use
