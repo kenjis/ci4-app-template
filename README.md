@@ -79,12 +79,24 @@ $ php spark revision:update
 - Auto Routing (Improved) is enabled. 
   - [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L28) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
   - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#auto-routing-improved
-- `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
-- Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#csrf-protection-methods
-- CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#token-randomization
-- CSP is enabled. [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464). See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#turning-csp-on
-- CSP `$autoNonce` is disabled. [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187). See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#inline-content
-- Strict Validation Rules are used. [app/Config/Validation.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Validation.php#L24-L27). See https://codeigniter4.github.io/CodeIgniter4/libraries/validation.html#traditional-and-strict-rules
+- `Config\CURLRequest::$shareOptions` is disabled. 
+  - [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). 
+  - See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
+- Using Session based CSRF protection. 
+  - [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18). 
+  - See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#csrf-protection-methods
+- CSRF protection `$tokenRandomize` is enabled. 
+  - [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29). 
+  - See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#token-randomization
+- CSP is enabled. 
+  - [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464). 
+  - See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#turning-csp-on
+- CSP `$autoNonce` is disabled. 
+  - [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187). 
+  - See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#inline-content
+- Strict Validation Rules are used. 
+  - [app/Config/Validation.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Validation.php#L24-L27). 
+  - See https://codeigniter4.github.io/CodeIgniter4/libraries/validation.html#traditional-and-strict-rules
 
 ### Filters
 
