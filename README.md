@@ -76,7 +76,9 @@ $ php spark revision:update
 
 ### Configs
 
-- Auto Routing is disabled. [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L24). (Since v4.2.0, CI4 also disable this setting by default.)
+- Auto Routing (Improved) is enabled. 
+  - [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L28) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
+  - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#auto-routing-improved
 - `Config\CURLRequest::$shareOptions` is disabled. [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
 - Using Session based CSRF protection. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#csrf-protection-methods
 - CSRF protection `$tokenRandomize` is enabled. [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#token-randomization
