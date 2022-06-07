@@ -100,13 +100,21 @@ $ php spark revision:update
 
 ### Filters
 
-- CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L57-L60). See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#enable-csrf-protection
-- InvalidChars filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L38). See https://codeigniter4.github.io/CodeIgniter4/incoming/filters.html#invalidchars
-- SecureHeaders filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L43). See https://codeigniter4.github.io/CodeIgniter4/incoming/filters.html#secureheaders
+- CSRF filter is enabled. 
+  - [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L57-L60). 
+  - See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#enable-csrf-protection
+- InvalidChars filter is enabled. 
+  - [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L38). 
+  - See https://codeigniter4.github.io/CodeIgniter4/incoming/filters.html#invalidchars
+- SecureHeaders filter is enabled. 
+  - [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L43). 
+  - See https://codeigniter4.github.io/CodeIgniter4/incoming/filters.html#secureheaders
 
 ### Features
 
-- `Config\Feature::$multipleFilters` is enabled. [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L26). See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#applying-filters
+- `Config\Feature::$multipleFilters` is enabled. 
+  - [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L26). 
+  - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#applying-filters
 
 ### Others
 
