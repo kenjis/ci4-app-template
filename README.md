@@ -8,6 +8,7 @@ This repository includes:
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
   - [CodeIgniter DevKit](https://github.com/codeigniter4/devkit) 1.2.0
 - [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.6.16
+- [Tatter\Patches](https://github.com/tattersoftware/codeigniter4-patches) 2.1.0
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.1.0
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.10.0
 
