@@ -78,7 +78,7 @@ $ php spark revision:update
 ### Configs
 
 - Auto Routing (Improved) is enabled. 
-  - [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L28) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
+  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routing.php#L91) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
   - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#auto-routing-improved
 - `Config\CURLRequest::$shareOptions` is disabled. 
   - [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). 
