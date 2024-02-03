@@ -77,13 +77,18 @@ $ php spark revision:update
 
 ### Configs
 
+- BaseURL's `index.php` is removed.
+  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L45)
 - Auto Routing (Improved) is enabled. 
   - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routing.php#L91) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
   - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#auto-routing-improved
-- `Config\CURLRequest::$shareOptions` is disabled. 
+- `Config\CURLRequest::$shareOptions` is disabled. (Since v4.4.0, this is set by default.)
   - [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). 
   - See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
-- Using Session based CSRF protection. 
+- MySQLi's `numberNative` is enabled.
+  - [app/Config/Database.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Database.php#L45)
+  - See https://codeigniter4.github.io/CodeIgniter4/database/configuration.html#explanation-of-values
+- Using Session-based CSRF protection. 
   - [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18). 
   - See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#csrf-protection-methods
 - CSRF protection `$tokenRandomize` is enabled. 
