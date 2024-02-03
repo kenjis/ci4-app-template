@@ -144,5 +144,4 @@
 # CURLRequest
 #--------------------------------------------------------------------
 
-# changed by ci4-app-template
 # curlrequest.shareOptions = false
