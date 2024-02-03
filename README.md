@@ -4,10 +4,11 @@ This template changes the default configuration of CI4 more secure.
 
 This repository includes:
 
-- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.3.2
+- [CodeIgniter](https://github.com/codeigniter4/CodeIgniter4) 4.4.5
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-  - [CodeIgniter DevKit](https://github.com/codeigniter4/devkit) 1.1.1
-- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.6.5
+  - [CodeIgniter DevKit](https://github.com/codeigniter4/devkit) 1.2.0
+- [PHPUnit](https://github.com/sebastianbergmann/phpunit) 9.6.16
+- [Tatter\Patches](https://github.com/tattersoftware/codeigniter4-patches) 2.1.0
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.1.0
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.10.0
 
@@ -76,13 +77,18 @@ $ php spark revision:update
 
 ### Configs
 
+- BaseURL's `index.php` is removed.
+  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L45)
 - Auto Routing (Improved) is enabled. 
-  - [app/Config/Routes.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routes.php#L28) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
+  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routing.php#L91) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
   - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#auto-routing-improved
-- `Config\CURLRequest::$shareOptions` is disabled. 
+- `Config\CURLRequest::$shareOptions` is disabled. (Since v4.4.0, this is set by default.)
   - [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). 
   - See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
-- Using Session based CSRF protection. 
+- MySQLi's `numberNative` is enabled.
+  - [app/Config/Database.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Database.php#L45)
+  - See https://codeigniter4.github.io/CodeIgniter4/database/configuration.html#explanation-of-values
+- Using Session-based CSRF protection. 
   - [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L18). 
   - See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#csrf-protection-methods
 - CSRF protection `$tokenRandomize` is enabled. 
