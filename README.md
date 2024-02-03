@@ -72,18 +72,18 @@ $ php spark revision:update
 
 ### Services
 
-- Auto-Discovery of services is disabled. [app/Config/Modules.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Modules.php#L51).
+- Auto-Discovery of services is disabled. [app/Config/Modules.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Modules.php#L82).
 - `Config\Services` extends `CodeIgniter\Config\Services`. [app/Config/Services.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Services.php#L20).
 
 ### Configs
 
 - BaseURL's `index.php` is removed.
-  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L45)
+  - [app/Config/App.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L43)
 - Auto Routing (Improved) is enabled. 
-  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routing.php#L91) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L31)
+  - [app/Config/Routing.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Routing.php#L93) and [app/Config/Feature.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Feature.php#L29)
   - See https://codeigniter4.github.io/CodeIgniter4/incoming/routing.html#auto-routing-improved
 - `Config\CURLRequest::$shareOptions` is disabled. (Since v4.4.0, this is set by default.)
-  - [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L21). 
+  - [app/Config/CURLRequest.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/CURLRequest.php#L19). 
   - See https://codeigniter4.github.io/CodeIgniter4/libraries/curlrequest.html#sharing-options
 - MySQLi's `numberNative` is enabled.
   - [app/Config/Database.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Database.php#L45)
@@ -95,10 +95,10 @@ $ php spark revision:update
   - [app/Config/Security.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Security.php#L29). 
   - See https://codeigniter4.github.io/CodeIgniter4/libraries/security.html#token-randomization
 - CSP is enabled. 
-  - [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L464). 
+  - [app/Config/App](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/App.php#L176). 
   - See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#turning-csp-on
 - CSP `$autoNonce` is disabled. 
-  - [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L187). 
+  - [app/Config/ContentSecurityPolicy](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/ContentSecurityPolicy.php#L175). 
   - See https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html#inline-content
 - Strict Validation Rules are used. (Since v4.3.0, this is set by default.)
   - [app/Config/Validation.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Validation.php#L24-L27). 
